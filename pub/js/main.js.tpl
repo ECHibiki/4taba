@@ -62,7 +62,7 @@ function hideAdminLinks() {
 
 function hideThread(e, target_id){
     var thread_body = document.getElementById(target_id);
-    var display_type = thread_body.style.display == "none" ? "initial" : "none";
+    var display_type = thread_body.style.display == "none" ? "block" : "none";
 
     thread_body.style.display = display_type;
     localStorage[target_id] = display_type;
